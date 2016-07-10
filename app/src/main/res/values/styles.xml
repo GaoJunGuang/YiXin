@@ -1,0 +1,88 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <!-- Customize your theme here. -->
+        <item name="android:actionOverflowButtonStyle">@style/addButtonStyle</item>
+        <!--更改actionbar 的高度 -->
+        <item name="android:actionBarSize">42dp</item>
+    </style>
+
+    <style name="addButtonStyle">
+        <item name="android:src">@drawable/actionbar_add_icon</item>
+    </style>
+    
+    <style name="sms_remind_style">
+        <item name="android:layout_width">13dp</item>
+        <item name="android:layout_height">13dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@drawable/sms_remind_bg</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="friend_textview_style">
+        <item name="android:textColor">#ee000000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@drawable/friend_textview_bg</item>
+    </style>
+
+    <style name="friend_index_style">
+        <item name="android:background">@drawable/friend_index_bg</item>
+    </style>
+
+    <style name="sms_detail_indicator_image_style">
+        <item name="android:src">@drawable/sms_detail_indicator_keybroad_up_selector</item>
+    </style>
+
+    <style name="sms_detail_indicator_keyboard_image_style">
+        <item name="android:src">@drawable/sms_detail_indicator_keybroad_down_selector</item>
+    </style>
+
+    <style name="sms_detail_indicator_voice_image_style">
+        <item name="android:src">@drawable/sms_detail_indicator_voice_selector</item>
+    </style>
+
+    <style name="sms_detail_indicator_press_voice_image_style">
+        <item name="android:src">@drawable/sms_detail_indicator_press_voice_selector</item>
+    </style>
+
+    <style name="sms_detail_indicator_emotion_image_style">
+        <item name="android:src">@drawable/sms_detail_indicator_emotion_selector</item>
+    </style>
+
+    <style name="sms_detail_indicator_plus_image_style">
+        <item name="android:src">@drawable/sms_detail_indicator_plus_selector</item>
+    </style>
+
+    <style name="sms_detail_actionbar_image_style">
+        <item name="android:background">@drawable/button_click_selector</item>
+    </style>
+
+    <style name="sms_subscription_toggle_style">
+        <item name="android:button">@drawable/button_click_selector</item>
+    </style>
+
+    <style name="sms_subscription_pop_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_in</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_out</item>
+    </style>
+
+    <style name="phone_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--  是否浮现在activity之上  -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否模糊  -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 点击dialog外不会关闭dialog  -->
+        <!--<item name="android:windowCloseOnTouchOutside">false</item>-->
+
+    </style>
+
+
+
+</resources>

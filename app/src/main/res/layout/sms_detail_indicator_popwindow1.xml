@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_window_background_white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25sp"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:text="忘记支付密码"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#ffd0d0d0"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25sp"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:text="绑定银行卡"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#ffd0d0d0"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25sp"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:text="换绑手机号码"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#ffd0d0d0"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25sp"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:text="查看交易记录"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#ffd0d0d0"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25sp"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:text="商品交易问题"/>
+
+
+
+
+</LinearLayout>

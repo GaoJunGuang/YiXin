@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/iv_sms_detail_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:padding="3dp"
+        android:background="@drawable/button_click_selector"
+        android:src="@drawable/actionbar_dark_back_icon" />
+
+    <TextView
+        android:id="@+id/tv_sms_detail_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="5"
+        android:text="网易新闻"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/iv_sms_detail_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:background="@drawable/button_click_selector"
+        android:src="@drawable/message_actionbar_right_icon" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">易信</string>
+    <string name="action_search">查找</string>
+
+
+    <string name="group_chat">发起群聊</string>
+    <string name="free_sms">免费短信</string>
+    <string name="play_phone">拨打电话</string>
+    <string name="night">夜间</string>
+    <string name="scan">扫一扫</string>
+    <string name="add_friends">添加好友</string>
+
+    <string name="contact">通讯录</string>
+    <string name="groupchat">群聊</string>
+    <string name="subscription">公众号</string>
+
+    <string name="new_friend">新的好友</string>
+    <string name="need_help">需要帮助</string>
+    <string name="safe_tip">安全贴士</string>
+    <string name="more_service">更多服务</string>
+    <string name="activity_center">活动中心</string>
+
+
+    <string-array name="tab_page">
+        <item>消息</item>
+        <item>电话</item>
+        <item>发现</item>
+        <item>好友</item>
+        <item>我</item>
+    </string-array>
+
+</resources>

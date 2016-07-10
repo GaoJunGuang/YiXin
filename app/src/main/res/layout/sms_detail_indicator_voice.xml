@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_sms_indicator_keyboard_down"
+            style="@style/sms_detail_indicator_keyboard_image_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:clickable="true"
+            />
+
+        <ImageView
+            android:id="@+id/iv_sms_indicator_voice"
+            style="@style/sms_detail_indicator_press_voice_image_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:clickable="true"/>
+
+        <EditText
+            android:id="@+id/et_sms_indicator_input"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="5"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/sms_indicator_input_bg"
+            />
+
+        <ImageView
+            android:id="@+id/iv_sms_indicator_emotion"
+            style="@style/sms_detail_indicator_emotion_image_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/iv_sms_indicator_plus"
+            style="@style/sms_detail_indicator_plus_image_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:clickable="true"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/message_ic_mic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#51eaa3"
+                android:text="按住说话"/>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

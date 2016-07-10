@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+        <include layout="@layout/sms_detail_actionbar" />
+
+    </FrameLayout>
+
+
+    <ListView
+        android:id="@+id/lv_sms_many"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="20">
+        <!--android:background="@drawable/message_left_bg_border"-->
+
+    </ListView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:id="@+id/ll_sms_detail_indicator_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <include layout="@layout/sms_detail_tab_indicator" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_sms_detail_indicator_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <include layout="@layout/sms_detail_indicator_keyboard" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sms_detail_indicator_voice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <include layout="@layout/sms_detail_indicator_voice" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>
