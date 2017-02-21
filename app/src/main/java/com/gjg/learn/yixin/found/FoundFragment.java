@@ -1,18 +1,22 @@
 package com.gjg.learn.yixin.found;
 
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.widget.ViewDragHelper;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.gjg.learn.yixin.R;
 import com.gjg.learn.yixin.RecycleViewDivider;
 import com.gjg.learn.yixin.entity.FoundEntity;
+import com.xys.libzxing.zxing.activity.CaptureActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -83,6 +87,16 @@ public class FoundFragment extends Fragment {
         recyclerView.setLayoutManager(linear);
         recyclerView.setAdapter(foundAdapter);
         recyclerView.addItemDecoration(new RecycleViewDivider(getActivity(), LinearLayoutManager.VERTICAL));
+        foundAdapter.setOnItemClickListener(new FoundAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                if(position==12){
+                    Intent intent=new Intent(getActivity(), CaptureActivity.class);
+                    startActivityForResult(intent,0);
+                }
+            }
+        });
+
         return view;
     }
 
@@ -93,5 +107,20 @@ public class FoundFragment extends Fragment {
             list.add(entity);
         }
 
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode== Activity.RESULT_OK){
+            Bundle bundle=data.getExtras();
+            String result = bundle.getString("result");
+            Dialog dialog=new Dialog(getActivity());
+            dialog.setTitle("扫描结果");
+            TextView textView=new TextView(getActivity());
+            textView.setText(result);
+            dialog.setContentView(textView);
+            dialog.show();
+        }
     }
 }
