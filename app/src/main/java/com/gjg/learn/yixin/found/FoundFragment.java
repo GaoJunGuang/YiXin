@@ -112,7 +112,7 @@ public class FoundFragment extends Fragment {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode== Activity.RESULT_OK){
+        if(resultCode== Activity.RESULT_OK){
             Bundle bundle=data.getExtras();
             String result = bundle.getString("result");
             Dialog dialog=new Dialog(getActivity());
